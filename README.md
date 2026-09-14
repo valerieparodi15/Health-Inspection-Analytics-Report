@@ -50,7 +50,7 @@ This dashboard provides comprehensive insights into violation patterns across LA
 ### 1. Data Cleaning (R)
 Raw violation and inspection data was cleaned and prepared using R.
 
-**See [`scripts/data_cleaning.R`](scripts/data_cleaning.R) for the full cleaning process**
+**See [`data_cleaning.R`](data_cleaning.R) for the full cleaning process**
 
 **Steps:**
 - Loaded raw violation and inspection records
