@@ -110,15 +110,28 @@ The cleaned and aggregated data is imported into Power BI for interactive visual
 
 ## Data Dictionary
 
+## Data Dictionary
+
+### Violations Table
 | Field | Description |
 |-------|-------------|
-| Business Name | Name of the business |
-| City | City in LA County where violation occurred |
-| Violation Date | Date the violation was issued |
-| Risk Level | Severity category (High/Medium/Low) |
-| Violation Type | Category of violation |
-| Year | Year of violation |
-| Business Type | Category/industry of business |
+| serial_number| Unique identifier that links each inspection to its corresponding violations |
+| points | Points deducted from score |
+| violation_description | Description of violation found |
+
+
+### Inspections Table
+| Field | Description |
+|-------|-------------|
+| serial_number | Unique identifier for each inspection |
+| parent_company_clean | Business that takes responsibility for violation (not necessarily owner) |
+| activity_date | Date of the inspection |
+| program_type | Category/industry of business |
+| Inspection Rating | Rating/score from the inspection |
+| facility_city | City in LA County or unincorporated area |
+| risk_level | Businesses risk level based on products and services provided|
+| score | Final score out of 100 |
+| grade | Letter grade |
 
 ## Requirements
 
