@@ -1,6 +1,6 @@
 # Environmental Health Inspections Report (LA County)
 
-An interactive Power BI Report analyzing health and safety violations across businesses in Los Angeles County, with detailed breakdowns by year, city, business type, and risk level.
+An interactive Power BI report analyzing health and safety violations across businesses in Los Angeles County, with detailed breakdowns by year, city, business type, and risk level.
 
 ## Table of Contents
 - [Overview](#overview)
@@ -12,7 +12,7 @@ An interactive Power BI Report analyzing health and safety violations across bus
 
 ## Overview
 
-This Report provides comprehensive insights into violation patterns across LA County restaurants and markets. It helps identify compliance trends, areas of improvement, and businesses with recurring violations.
+This report provides comprehensive insights into violation patterns across LA County restaurants and markets. It helps identify compliance trends, areas of improvement, and businesses with recurring violations.
 
 - **Data Source**: 
   - Dataset 1: "Environmental Health Restaurant and Market Violations 07/01/2023 to 06/30/2026"
@@ -109,8 +109,6 @@ The cleaned and aggregated data is imported into Power BI for interactive visual
 - **High-Risk Violations**: Count of violations categorized as high severity
 - **Most Violated Cities**: Top 10 cities by violation count
 - **Repeat Offenders**: Businesses with multiple violations
-
-## Data Dictionary
 
 ## Data Dictionary
 
