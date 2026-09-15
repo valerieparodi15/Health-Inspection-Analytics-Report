@@ -125,13 +125,14 @@ The cleaned and aggregated data is imported into Power BI for interactive visual
 |-------|-------------|
 | activity_date | Date of the inspection |
 | facility_id | Unique identifier for facilities |
+| facility_name | Name of facility |
 | facility_city | City in LA County or unincorporated area |
 | score | Final score out of 100 |
 | grade | Letter grade corresponding to inspection score |
 | serial_number | Unique identifier for each inspection |
 | program_type | Category/industry of business |
 | risk_level | Businesses risk level based on products and services provided|
-| parent_company_clean | Business that takes responsibility for violation (not necessarily owner) |
+| parent_company_clean | Parent company of facility (used for grouping) |
 
 
 ## Requirements
