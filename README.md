@@ -12,7 +12,7 @@ An interactive Power BI Report analyzing health and safety violations across bus
 
 ## Overview
 
-This Report provides comprehensive insights into violation patterns across LA County restaurants and markets. It helps identify compliance trends, high-risk areas, and businesses with recurring violations.
+This Report provides comprehensive insights into violation patterns across LA County restaurants and markets. It helps identify compliance trends, areas of improvement, and businesses with recurring violations.
 
 - **Data Source**: 
   - Dataset 1: "Environmental Health Restaurant and Market Violations 07/01/2023 to 06/30/2026"
@@ -82,6 +82,8 @@ The cleaned and aggregated data is imported into Power BI for interactive visual
   - RiskSort
   - CalendarDate
   - CategorySort
+ 
+- **DAX Measures**: See `dax/measures.md` for documentation of all calculated measures and their formulas
 
 ## How to Use
 
@@ -123,15 +125,16 @@ The cleaned and aggregated data is imported into Power BI for interactive visual
 ### Inspections Table
 | Field | Description |
 |-------|-------------|
-| serial_number | Unique identifier for each inspection |
-| parent_company_clean | Business that takes responsibility for violation (not necessarily owner) |
 | activity_date | Date of the inspection |
-| program_type | Category/industry of business |
-| Inspection Rating | Rating/score from the inspection |
+| facility_id | Unique identifier for facilities |
 | facility_city | City in LA County or unincorporated area |
-| risk_level | Businesses risk level based on products and services provided|
 | score | Final score out of 100 |
-| grade | Letter grade |
+| grade | Letter grade corresponding to inspection score |
+| serial_number | Unique identifier for each inspection |
+| program_type | Category/industry of business |
+| risk_level | Businesses risk level based on products and services provided|
+| parent_company_clean | Business that takes responsibility for violation (not necessarily owner) |
+
 
 ## Requirements
 
