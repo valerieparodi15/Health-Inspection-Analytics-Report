@@ -1,4 +1,4 @@
-# Environmental Health Inspections Dashboard (LA County)
+# Environmental Health Inspections Report (LA County)
 
 An interactive Power BI Report analyzing health and safety violations across businesses in Los Angeles County, with detailed breakdowns by year, city, business type, and risk level.
 
