@@ -83,7 +83,7 @@ The cleaned and aggregated data is imported into Power BI for interactive visual
   - CalendarDate
   - CategorySort
  
-- **DAX Measures**: See `dax/measures.md` for documentation of all calculated measures and their formulas
+- **DAX Measures**: See [`dax/measures.md`](DAX/) for documentation of all calculated measures and their formulas
 
 ## How to Use
 
