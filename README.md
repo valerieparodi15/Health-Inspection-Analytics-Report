@@ -4,7 +4,7 @@ An interactive Power BI report analyzing health and safety violations across bus
 
 ## Table of Contents
 - [Overview](#overview)
-- [Dashboard Features](#dashboard-features)
+- [Report Features](#report-features)
 - [Data Pipeline](#data-pipeline)
 - [How to Use](#how-to-use)
 - [Key Metrics](#key-metrics)
@@ -25,7 +25,7 @@ This report provides comprehensive insights into violation patterns across LA Co
 - **Time Period**: 07/01/2023-06/30/2026
 - **Target Audience**: Health inspectors, business owners, compliance officers, policy makers,
 
-## Dashboard Features
+## Report Features
 
 ### Main Visualizations
 - **Violation Counts Overview** - Total violations by year showing trends over time
@@ -70,10 +70,10 @@ SQL queries were used for data exploration and creating aggregated tables for Po
 - `sql/big_chain_violations.sql` - Filters only businesses with 10 or more locations 
 - `sql/violation_by_city.sql` - Summarizes count of specific violations by cities per year (exploratory)
 
-### 3. Power BI Dashboard
+### 3. Power BI Report
 The cleaned and aggregated data is imported into Power BI for interactive visualization.
 
-- **File**: `LA_County_Violations_Dashboard.pbix`
+- **File**: `LA_County_Violations_Report.pbix`
 - **Data Model**: 
   - Inspections_clean (one row per inspection)
   - Violations_clean (multiple row per inspection)
@@ -87,8 +87,8 @@ The cleaned and aggregated data is imported into Power BI for interactive visual
 
 ## How to Use
 
-1. **Open the Dashboard**
-   - Open `LA_County_Violations_Dashboard.pbix` in Power BI Desktop or Power BI Service
+1. **Open the Report**
+   - Open `LA_County_Violations_Report.pbix` in Power BI Desktop or Power BI Service
 
 2. **Filter the Data**
    - Use the slicers to filter by Year, City, Business, and Risk Level
@@ -145,7 +145,7 @@ The cleaned and aggregated data is imported into Power BI for interactive visual
 - **SQL Database** (e.g., SQLite, PostgreSQL, SQL Server)
   - Connection details in `sql/config.sql`
 
-### For Dashboard
+### For Report
 - **Power BI Desktop** (latest version) OR
 - **Power BI Online** access to view published version
 
@@ -163,7 +163,7 @@ The cleaned and aggregated data is imported into Power BI for interactive visual
 # Execute all .sql files in sql/ directory in order
 # Output: Aggregated tables for Power BI
 
-# 4. Refresh Power BI Dashboard
-# Open LA_County_Violations_Dashboard.pbix
+# 4. Refresh Power BI Report
+# Open LA_County_Violations_Report.pbix
 # Refresh data connections
 # All visualizations auto-update
