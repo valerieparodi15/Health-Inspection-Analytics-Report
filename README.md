@@ -85,6 +85,20 @@ The cleaned and aggregated data is imported into Power BI for interactive visual
  
 - **DAX Measures**: See [`DAX/measures.md`](DAX/) for documentation of all calculated measures and their formulas 
 
+## Dashboard Preview
+
+### Overview
+
+![Power BI report overview](images/overview-page.png)
+
+### City Analysis
+
+![City analysis page](images/city-analysis-page.png)
+
+### Risk Level Analysis
+
+![Risk level analysis page](images/risk-analysis-page.png)
+
 ## How to Use
 
 1. **Open the Report**
