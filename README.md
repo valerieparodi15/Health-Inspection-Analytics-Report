@@ -97,7 +97,7 @@ The cleaned and aggregated data is imported into Power BI for interactive visual
 
 ### Risk Level Analysis
 
-![Risk level analysis page](images/risk-analysis-page.png)
+![Risk level analysis page](images/risk-level-analysis-page.png)
 
 ## How to Use
 
