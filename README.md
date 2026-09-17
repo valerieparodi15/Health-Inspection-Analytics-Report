@@ -88,7 +88,7 @@ The cleaned and aggregated data is imported into Power BI for interactive visual
 ## How to Use
 
 1. **Open the Report**
-   - Open `LA_County_Violations_Report.pbix` in Power BI Desktop or Power BI Service
+   - Open `Health_Inspections_Report.pbix` in Power BI Desktop or Power BI Service
 
 2. **Filter the Data**
    - Use the slicers to filter by Year, City, Business, and Risk Level
@@ -134,20 +134,6 @@ The cleaned and aggregated data is imported into Power BI for interactive visual
 | risk_level | Businesses risk level based on products and services provided|
 | parent_company_clean | Parent company of facility (used for grouping) |
 
-
-## Requirements
-
-### For Data Processing
-- **R** (version 3.6+)
-  - Required packages: tidyverse, dplyr, readr, stringr
-  - Install: `install.packages(c("tidyverse", "dplyr", "readr", "stringr"))`
-
-- **SQL Database** (e.g., SQLite, PostgreSQL, SQL Server)
-  - Connection details in `sql/config.sql`
-
-### For Report
-- **Power BI Desktop** (latest version) OR
-- **Power BI Online** access to view published version
 
 ## How to Reproduce
 
