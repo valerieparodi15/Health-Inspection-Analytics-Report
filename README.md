@@ -1,4 +1,4 @@
-# Environmental Health Inspections Report (LA County)
+# Environmental Health Inspections Report (Los Angeles County)
 
 An interactive Power BI report analyzing health and safety violations across businesses in Los Angeles County, with detailed breakdowns by year, city, business type, and risk level.
 
@@ -12,7 +12,7 @@ An interactive Power BI report analyzing health and safety violations across bus
 
 ## Overview
 
-This report provides comprehensive insights into violation patterns across LA County restaurants and markets. It helps identify compliance trends, areas of improvement, and businesses with recurring violations.
+This report provides comprehensive insights into violation patterns across Los Angeles County restaurants and markets. It helps identify compliance trends, areas of improvement, and businesses with recurring violations.
 
 - **Data Source**: 
   - Dataset 1: "Environmental Health Restaurant and Market Violations 07/01/2023 to 06/30/2026"
@@ -23,7 +23,7 @@ This report provides comprehensive insights into violation patterns across LA Co
   - URL: https://data.lacounty.gov/datasets/19b6607ac82c4512b10811870975dbdc/about
 - **Geographic Coverage**: Los Angeles County
 - **Time Period**: 07/01/2023-06/30/2026
-- **Target Audience**: Health inspectors, business owners, compliance officers, policy makers,
+- **Target Audience**: Health inspectors, business owners, compliance officers, policymakers
 
 ## Report Features
 
@@ -56,7 +56,7 @@ Raw violation and inspection data was cleaned and prepared using R.
 - Loaded raw violation and inspection records
 - Handled missing/inconsistent data
 - Standardized business names
-- Parsed Columns
+- Parsed and standardized columns
 - Output: Clean datasets (`data/cleaned/violations_cleaned.csv`)
 
 ### 2. Pre-Analysis & Aggregation (SQL)
@@ -73,17 +73,17 @@ SQL queries were used for data exploration and creating aggregated tables for Po
 ### 3. Power BI Report
 The cleaned and aggregated data is imported into Power BI for interactive visualization.
 
-- **File**: `LA_County_Violations_Report.pbix`
+- **File**: `Health_Inspections_Report.pbix`
 - **Data Model**: 
   - Inspections_clean (one row per inspection)
-  - Violations_clean (multiple row per inspection)
+  - Violations_clean (multiple rows per inspection)
   - Big_chain_violations (Violations for Businesses with 10+ locations)
   - Violation_mapping (standardizes violations into categories)
   - RiskSort
   - CalendarDate
   - CategorySort
  
-- **DAX Measures**: See [`dax/measures.md`](DAX/) for documentation of all calculated measures and their formulas 
+- **DAX Measures**: See [`DAX/measures.md`](DAX/) for documentation of all calculated measures and their formulas 
 
 ## How to Use
 
@@ -126,7 +126,7 @@ The cleaned and aggregated data is imported into Power BI for interactive visual
 | activity_date | Date of the inspection |
 | facility_id | Unique identifier for facilities |
 | facility_name | Name of facility |
-| facility_city | City in LA County or unincorporated area |
+| facility_city | City in Los Angeles County or unincorporated area |
 | score | Final score out of 100 |
 | grade | Letter grade corresponding to inspection score |
 | serial_number | Unique identifier for each inspection |
@@ -134,16 +134,21 @@ The cleaned and aggregated data is imported into Power BI for interactive visual
 | risk_level | Businesses risk level based on products and services provided|
 | parent_company_clean | Parent company of facility (used for grouping) |
 
+## Limitations
 
+- The analysis is limited to the selected Los Angeles County datasets and reporting period.
+- A violation record does not necessarily represent a failed inspection.
+- Business names and parent-company relationships may contain inconsistencies.
+- The report is dependent on the availability and accuracy of the source data.
+- 
 ## How to Reproduce
 
 ```bash
 # 1. Run data cleaning in R
-# Open scripts/data_cleaning.R and execute
+# Open data_cleaning.R and execute
 # Output: data/cleaned/violations_cleaned.csv
 
 # 2. Load cleaned data into SQL database
-# Run sql/load_data.sql
 
 # 3. Run pre-analysis SQL queries
 # Execute all .sql files in sql/ directory in order
