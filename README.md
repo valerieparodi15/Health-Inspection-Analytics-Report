@@ -93,7 +93,7 @@ The cleaned and aggregated data is imported into Power BI for interactive visual
 
 ### City Analysis
 
-![City analysis page](images/city-page.png)
+![City analysis page](images/city-analysis-page.png)
 
 ### Risk Level Analysis
 
