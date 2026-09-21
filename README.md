@@ -106,7 +106,7 @@ The cleaned and aggregated data is imported into Power BI for interactive visual
 
 ### Analysis by Year
 
-![Analysis by year page](images/analysis-by-year.png)
+![Analysis by year page](images/analysis-by-year-page.png)
 
 
 ## How to Use
