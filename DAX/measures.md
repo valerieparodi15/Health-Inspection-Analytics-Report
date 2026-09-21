@@ -25,7 +25,9 @@ AvgViolationPerBusiness= DIVIDE(
 ```
 
 ## AvgViolationsPerInspections
+```
 AvgViolationsPerInspections = DIVIDE([violation_count],[TotalInspections])
+```
 
 ## CityViolationRatio
 ```
