@@ -6,10 +6,11 @@ An interactive Power BI report analyzing health and safety violations across bus
 - [Overview](#overview)
 - [Report Features](#report-features)
 - [Data Pipeline](#data-pipeline)
+- [Dashboard Preview](#dashboard-preview)
 - [How to Use](#how-to-use)
 - [Key Metrics](#key-metrics)
-- [Requirements](#requirements)
-
+- [Data Dictionary](#data-dictionary)
+- [Limitations](#limitations)
 ## Overview
 
 This report provides comprehensive insights into violation patterns across Los Angeles County restaurants and markets. It helps identify compliance trends, areas of improvement, and businesses with recurring violations.
@@ -22,7 +23,7 @@ This report provides comprehensive insights into violation patterns across Los A
   - Provider: Los Angeles County Department of Public Health
   - URL: https://data.lacounty.gov/datasets/19b6607ac82c4512b10811870975dbdc/about
 - **Geographic Coverage**: Los Angeles County
-- **Time Period**: 07/01/2023-06/30/2026
+- **Time Period**: July 1,2023-June 30, 2026
 - **Target Audience**: Health inspectors, business owners, compliance officers, policymakers
 
 ## Report Features
@@ -32,7 +33,7 @@ This report provides comprehensive insights into violation patterns across Los A
 - **Top 10 Violations** - Which Violation Categories have the highest number of recorded violations
 - **Violation Count By Business and Category** - Counts of categorized violations by business
 - **Inspection Ratings by Year** - Shows how businesses ratings are distributed across the years
-- **Interactive Filters** - Slice and dice by:
+- **Interactive Filters** - allow users to further analyze data by:
   - Year
   - City
   - Business Name
@@ -57,8 +58,7 @@ Raw violation and inspection data was cleaned and prepared using R.
 - Handled missing/inconsistent data
 - Standardized business names
 - Parsed and standardized columns
-- Output: Clean datasets (`data/cleaned/violations_cleaned.csv`)
-
+- Output: 
 ### 2. Pre-Analysis & Aggregation (SQL)
 SQL queries were used for data exploration and creating aggregated tables for Power BI.
 
@@ -83,7 +83,7 @@ The cleaned and aggregated data is imported into Power BI for interactive visual
   - CalendarDate
   - CategorySort
  
-- **DAX Measures**: See [`DAX/measures.md`](DAX/) for documentation of all calculated measures and their formulas 
+- **DAX Measures**: See [`DAX/measures.md`](DAX/measures.md) for documentation of all calculated measures and their formulas 
 
 ## Dashboard Preview
 
@@ -155,7 +155,7 @@ The cleaned and aggregated data is imported into Power BI for interactive visual
 | grade | Letter grade corresponding to inspection score |
 | serial_number | Unique identifier for each inspection |
 | program_type | Category/industry of business |
-| risk_level | Businesses risk level based on products and services provided|
+| risk_level | Business risk level based on products and services provided|
 | parent_company_clean | Parent company of facility (used for grouping) |
 
 ## Limitations
@@ -164,21 +164,8 @@ The cleaned and aggregated data is imported into Power BI for interactive visual
 - A violation record does not necessarily represent a failed inspection.
 - Business names and parent-company relationships may contain inconsistencies.
 - The report is dependent on the availability and accuracy of the source data.
-- 
-## How to Reproduce
 
-```bash
-# 1. Run data cleaning in R
-# Open data_cleaning.R and execute
-# Output: data/cleaned/violations_cleaned.csv
 
-# 2. Load cleaned data into SQL database
-
-# 3. Run pre-analysis SQL queries
-# Execute all .sql files in sql/ directory in order
-# Output: Aggregated tables for Power BI
-
-# 4. Refresh Power BI Report
 # Open LA_County_Violations_Report.pbix
 # Refresh data connections
 # All visualizations auto-update
