@@ -62,7 +62,7 @@ Raw violation and inspection data was cleaned and prepared using R.
 ### 2. Pre-Analysis & Aggregation (SQL)
 SQL queries were used for data exploration and creating aggregated tables for Power BI.
 
-**See [`sql/`](sql/) directory for all queries**
+**See [`SQL/`](SQL/) directory for all queries**
 
 **Key Queries:**
 - `sql/joined_inspections_violations.sql` - joins the two main datasets
