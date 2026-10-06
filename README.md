@@ -165,7 +165,8 @@ The cleaned and aggregated data is imported into Power BI for interactive visual
 - Business names and parent-company relationships may contain inconsistencies.
 - The report is dependent on the availability and accuracy of the source data.
 
-
-# Open LA_County_Violations_Report.pbix
-# Refresh data connections
-# All visualizations auto-update
+## Outcomes
+- Identified violations cities struggle with the most
+- Identified trends in violations by business and city
+- Helps public health departments identify areas of concern for potential campaigns
+- Delivered clear and informative visuals to support inspection score improvement for businesses
