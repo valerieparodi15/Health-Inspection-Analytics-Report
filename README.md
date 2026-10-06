@@ -11,6 +11,7 @@ An interactive Power BI report analyzing health and safety violations across bus
 - [Data Dictionary](#data-dictionary)
 - [Limitations](#limitations)
 - [Outcomes](#outcomes)
+- [Key Findings](#key-findings)
 ## Overview
 
 This project analyzes Los Angeles County health inspection data to identify violation patterns, cities with recurring issues, and operational trends across businesses and years. The final dashboard helps inspectors and public health teams target interventions and campaigns more effectively.
@@ -155,7 +156,8 @@ The cleaned and aggregated data is imported into Power BI for interactive visual
 - Helps public health departments identify areas of concern for potential campaigns
 - Delivered clear and informative visuals to support inspection score improvement for businesses
 
-## Key Findings / Results (07/01/2023 to 06/30/2026)
+## Key Findings 
+(07/01/2023 to 06/30/2026)
 - **Total Violations Analyzed**: 419.914K violations across 101,244 inspections 
 - **Top Violation Category**: [Sanitation] with 71.027K violations
 - **Highest-Risk City**: [Los Angeles] with 123,053 violations
