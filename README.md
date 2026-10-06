@@ -109,22 +109,6 @@ The cleaned and aggregated data is imported into Power BI for interactive visual
 ![Analysis by year page](images/analysis-by-year-page.png)
 
 
-## How to Use
-
-1. **Open the Report**
-   - Open `Health_Inspections_Report.pbix` in Power BI Desktop or Power BI Service
-
-2. **Filter the Data**
-   - Use the slicers to filter by Year, City, Business, and Risk Level
-   - Click "Clear filters" to reset
-
-3. **Explore Trends**
-   - Hover over visualizations for detailed tooltips
-   - Click on bars/sections to drill down into specific data points
-
-4. **Export/Share Results**
-   - Export visuals as images or PDFs
-   - Share specific filtered views with stakeholders
 
 ## Key Metrics
 
