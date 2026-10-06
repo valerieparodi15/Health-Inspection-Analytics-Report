@@ -154,3 +154,11 @@ The cleaned and aggregated data is imported into Power BI for interactive visual
 - Identified trends in violations by business and city 
 - Helps public health departments identify areas of concern for potential campaigns
 - Delivered clear and informative visuals to support inspection score improvement for businesses
+
+## Key Findings / Results (07/01/2023 to 06/30/2026)
+- **Total Violations Analyzed**: 419.914K violations across 101,244 inspections 
+- **Top Violation Category**: [Sanitation] with 71.027K violations
+- **Highest-Risk City**: [Los Angeles] with 123,053 violations
+- **Average Violations per Inspection**: 13.34
+- **Quarter with most Violations**: Q1 of 2024 with 8,107 violations
+- **Who contributes most violations:** High risk restaurants 236,525 violations
