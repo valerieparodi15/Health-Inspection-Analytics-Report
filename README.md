@@ -14,7 +14,7 @@ An interactive Power BI report analyzing health and safety violations across bus
 - [Key Findings](#key-findings)
 ## Overview
 
-This project analyzes Los Angeles County health inspection data to identify violation patterns, cities with recurring issues, and operational trends across businesses and years. The final dashboard helps inspectors and public health teams target interventions and campaigns more effectively.
+This project analyzes Los Angeles County health inspection data to identify violation patterns, cities with recurring issues, and operational trends across businesses and years. The final report helps inspectors and public health teams target interventions and campaigns more effectively. It also allows companies to investigate problem locations and recurring violations.
 
 - **Data Source**: 
   - Dataset 1: "Environmental Health Restaurant and Market Violations 07/01/2023 to 06/30/2026"
