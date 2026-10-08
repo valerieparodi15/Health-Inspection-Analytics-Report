@@ -59,7 +59,7 @@ Raw violation and inspection data was cleaned and prepared using R.
 - Handled missing/inconsistent data
 - Standardized business names
 - Parsed and standardized columns
-- Output: 
+- Output: [`Clean_Datasets/`](Clean_Datasets/)
 ### 2. Pre-Analysis & Aggregation (SQL)
 SQL queries were used for data exploration and creating aggregated tables for Power BI.
 
